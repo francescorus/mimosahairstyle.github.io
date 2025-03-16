@@ -2372,3 +2372,40 @@ a {
 .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff !important
 }
+
+
+
+@media (max-width: 768px) {
+    .top-bar {
+      display: block;
+      text-align: center;
+    }
+    
+    .carousel-container {
+      width: 100%;
+    }
+  
+    .container-mappa iframe {
+      width: 100%;
+      height: 250px;
+    }
+    
+    .social {
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .social a {
+      margin: 0 10px;
+    }
+  
+    .professionale {
+      display: block;
+      text-align: center;
+    }
+  
+    .professionale img {
+      width: 100%;
+      height: auto;
+    }
+  }
