@@ -15,6 +15,9 @@ html {
     -webkit-text-size-adjust: 100%
 }
 .container-mappa{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     height: 400px;
     width: 50%;
 }
@@ -23,6 +26,7 @@ html {
     width: 100%;
 }
 .orari-container {
+    
     width:50%;
     height: auto;
     background: #fff;
@@ -33,7 +37,7 @@ html {
     display:inline-block;
 }
 .row{
-
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Spazio tra gli elementi */
@@ -1183,7 +1187,7 @@ a {
 
 .w3-content,
 .w3-auto {
-    
+   
     background: linear-gradient(to right, #fcfaf5, #fff5ee);
     margin-left: auto;
     margin-right: auto
