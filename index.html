@@ -2,115 +2,28 @@
 <html>
 
 <head>
-  <title>W3.CSS Template</title>
+  <title>MimosaHairStyleWebsite</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
-
-
-  <!-- Bootstrap core CSS -->
-  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    .carousel-container {
-
-      width: 100%;
-      max-width: 100%;
-      margin: auto;
-      overflow: hidden;
-
-    }
-
-    .carousel {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .carousel img {
-      width: 100%;
-      height: auto;
-    }
-
-    .prev,
-    .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      font-size: 18px;
-      border-radius: 50%;
-    }
-
-    .prev {
-      left: 10px;
-    }
-
-    .next {
-      right: 10px;
-    }
-
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-  </style>
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-  <style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Oswald"
-    }
-
-    body {
-      font-family: "Open Sans"
-    }
-  </style>
 </head>
 
 
-<body class="w3-light-grey">
+<body>
   <!-- Navigation bar with social media icons -->
   <div class="top-bar">
     <!-- Navigazione -->
     <nav class="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="servizi.html">Servizi</a></li>
-        <li><a href="team.html">Il Nostro Team</a></li>
-        <li><a href="test.html">Contatti</a></li>
+        <li><a href="./pagine/servizi.html">Servizi</a></li>
+        <li><a href="./pagine/team.html">Il Nostro Team</a></li>
+        <li><a href="./pagine/contatti.html">Contatti</a></li>
       </ul>
     </nav>
 
@@ -121,30 +34,25 @@
       <a href="#"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
-
-  <div class="w3-content" style="max-width:1600px">
-    <center>
-
-      <header class="logo-mimosa w3-wide" id="home">
-        <img class="image-2" src="mimosaprofessionalità.png" alt="Fashion Blog" width="1600" height="1060">
-        <div class="w3-display-left w3-padding-large">
-          <img class="w3-image" src="mimosalogouff.png" alt="Fashion Blog" width="1600" height="1060">
-        </div>
-
-        <div class="w3-display-left w3-padding-large">
+<center>
+  <div class="sfondo">
+      <header class="logo-mimosa" id="home">
+        <div class="header-container">
+          <img class="background-image" src="foto/mimosaprofessionalità.png" alt="Fashion Blog">
+          <img class="logo-image" src="foto/mimosalogouff.png" alt="Mimosa Logo">
         </div>
       </header>
 
       <div class="row">
         <div class="orari-container">
           <h2>Orari di Apertura</h2>
-          <div class="orari-item"><span class="giorno">Lunedì:</span> Chiuso</div>
-          <div class="orari-item"><span class="giorno">Martedì:</span> 09:00 - 18:00</div>
-          <div class="orari-item"><span class="giorno">Mercoledì:</span> 13:30 - 21:30</div>
-          <div class="orari-item"><span class="giorno">Giovedì:</span> 08:00 - 18:00</div>
-          <div class="orari-item"><span class="giorno">Venerdì:</span> 08:30 - 18:30</div>
-          <div class="orari-item"><span class="giorno">Sabato:</span> 08:00 - 17:30</div>
-          <div class="orari-item2"><span class="giorno">Domenica:</span> Chiuso</div>
+          <div class="orari-item"><span class="giorno">Lunedì:</span> <span class="orario-giorno">Chiuso</span></div>
+          <div class="orari-item"><span class="giorno">Martedì:</span> <span class="orario-giorno">09:00 - 18:00</span></div>
+          <div class="orari-item"><span class="giorno">Mercoledì:</span> <span class="orario-giorno">13:30 - 21:30</span></div>
+          <div class="orari-item"><span class="giorno">Giovedì:</span> <span class="orario-giorno">08:00 - 18:00</span></div>
+          <div class="orari-item"><span class="giorno">Venerdì:</span> <span class="orario-giorno">08:30 - 18:30</span></div>
+          <div class="orari-item"><span class="giorno">Sabato:</span> <span class="orario-giorno">08:00 - 17:30</span></div>
+          <div class="orari-item2"><span class="giorno">Domenica:</span> <span class="orario-giorno">Chiuso</span></div>
         </div>
         <div class="container-mappa">
           <iframe class="mappa"
@@ -154,57 +62,12 @@
         </div>
       </div>
 
-    </center>
-
-    <!--<div class="carousel-container">
-      <div class="carousel">
-        <img src="a1.png" alt="Immagine 1">
-        <img src="a2.png" alt="Immagine 2">
-        <img src="a3.png" alt="Immagine 3">
-      </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </div>-->
-
-    <!--<script>
-      const carousel = document.querySelector(".carousel");
-      const images = document.querySelectorAll(".carousel img");
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-
-      let index = 0;
-
-      function updateCarousel() {
-        const offset = -index * 100;
-        carousel.style.transform = `translateX(${offset}%)`;
-      }
-
-      nextButton.addEventListener("click", () => {
-        index = (index + 1) % images.length;
-        updateCarousel();
-      });
-
-      prevButton.addEventListener("click", () => {
-        index = (index - 1 + images.length) % images.length;
-        updateCarousel();
-      });
-
-      // Scorrimento automatico ogni 3 secondi
-      setInterval(() => {
-        index = (index + 1) % images.length;
-        updateCarousel();
-      }, 8000);
-    </script>
-  -->
-
-
-    <center>
       <div class="professionale-text">
         <h2>I nostri servizi ❤️</h2>
       </div>
-      
+
       <div class="professionale">
-        <img src="mimosaprofessionalità.png" alt="Ragazza professionale">
+        <img src="foto/mimosaprofessionalità.png" alt="Ragazza professionale">
         <div class="professionale-text">
           <h2>Scopri l'eccellenza del nostro salone</h2>
           <p>Dove la bellezza prende forma: il tuo stile, la nostra passione.</p>
@@ -216,92 +79,66 @@
           <h2>Il segreto di una chioma perfetta</h2>
           <p>Cambia look, riscopri te stesso. Benvenuto nel tuo nuovo salone di fiducia.</p>
         </div>
-        <img src="mimosabiglietto.png" alt="Ragazza professionale">
+        <img src="foto/mimosabiglietto.png" alt="Ragazza professionale">
       </div>
 
       <div class="professionale">
-        <img src="provaimmagine.png" alt="Ragazza professionale">
+        <img src="foto/provaimmagine.png" alt="Ragazza professionale">
         <div class="professionale-text">
           <h2>Scopri l'eccellenza del nostro salone</h2>
           <p>Affidati ai nostri esperti per un look che ti valorizza</p>
         </div>
       </div>
-      
-    </center>
 
-    <header class="w3-display-container w3-wide" id="home">
-      <img class="image-2" src="a1.png" alt="Fashion Blog" width="1600" height="1060">
-      <div class="w3-display-left w3-padding-large">
-        <h1 class="w3-text-white">Prova</h1>
-        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Prova</b></h1>
+      <div class="professionale">
+        <div class="professionale-text">
+          <h2>Il segreto di una chioma perfetta</h2>
+          <p>Cambia look, riscopri te stesso. Benvenuto nel tuo nuovo salone di fiducia.</p>
+        </div>
+        <img src="foto/mimosabiglietto.png" alt="Ragazza professionale">
+      </div>
+
+    
+
+    <header class="fotolocale">
+      <img class="image-2" src="foto/a1.png" alt="MimosaHairStyle" width="1600" height="1060">
+      <div class="scrittelocale">
+        <h1 class="testolocale">Descrizione titolo</h1>
+        <h1 class="sottotestolocale"><b>Prova</b></h1>
       </div>
     </header>
 
-    <header class="w3-display-container w3-wide" id="home">
-      <img class="image-2" src="a1.png" alt="Fashion Blog" width="1600" height="1060">
-      <div class="w3-display-left w3-padding-large">
-        <h1 class="w3-text-white">Prova</h1>
-        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Prova</b></h1>
+    <header class="fotolocale">
+      <img class="image-2" src="foto/a1.png" alt="MimosaHairStyle" width="1600" height="1060">
+      <div class="scrittelocale">
+        <h1 class="testolocale">Descrizione titolo</h1>
+        <h1 class="sottotestolocale"><b>Prova</b></h1>
       </div>
     </header>
-
-    <header class="w3-display-container w3-wide" id="home">
-      <img class="image-2" src="a1.png" alt="Fashion Blog" width="1600" height="1060">
-      <div class="w3-display-left w3-padding-large">
-        <h1 class="w3-text-white">Prova</h1>
-        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Prova</b></h1>
+    
+    <header class="fotolocale">
+      <img class="image-2" src="foto/a1.png" alt="MimosaHairStyle" width="1600" height="1060">
+      <div class="scrittelocale">
+        <h1 class="testolocale">Descrizione titolo</h1>
+        <h1 class="sottotestolocale"><b>Prova</b></h1>
       </div>
     </header>
 
     <div>
-      <img class="mimosaimage" src="mimosa2.png" alt="Fashion Blog" width="1600" height="1060">
+      <img class="mimosaimage" src="foto/mimosa2.png" alt="Fashion Blog">
     </div>
-
+    <div class="separator"></div>
     <div>
-      <img class="mimosaimage" src="mimosa2.png" alt="Fashion Blog" width="1600" height="1060">
+      <img class="mimosaimage" src="foto/mimosa2.png" alt="Fashion Blog">
     </div>
-    <!-- END w3-content -->
-  </div>
 
-  <!-- Subscribe Modal -->
-  <div id="subscribe" class="w3-modal w3-animate-opacity">
-    <div class="w3-modal-content" style="padding:32px">
-      <div class="w3-container w3-white">
-        <i onclick="document.getElementById('subscribe').style.display='none'"
-          class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
-        <h2 class="w3-wide">SUBSCRIBE</h2>
-        <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-        <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
-          onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
-      </div>
-    </div>
   </div>
-
+</center>
   <!-- Footer -->
-  <footer class="w3-container w3-dark-grey" style="padding:32px">
-    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
-        class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <footer class="footer" style="padding:32px">
+    <a href="#" class="footerbutton"><i class="fa fa-arrow-up"></i>To the top</a>
+    <p>Powered by <a href="Francesco Russo" target="_blank">Francesco Russo</a></p>
   </footer>
-
-  <script>
-    // Toggle between hiding and showing blog replies/comments
-    document.getElementById("myBtn").click();
-    function myFunction(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-
-    function likeFunction(x) {
-      x.style.fontWeight = "bold";
-      x.innerHTML = "✓ Liked";
-    }
-  </script>
 </body>
 
 </html>
