@@ -1,7 +1,7 @@
-html {
-    box-sizing: border-box;
-}
 
+.sfondo{
+    width: 100%;
+}
 /* Contenitore orari */
 .orari-container {
     flex: 1;  /* Permette alla mappa e agli orari di occupare lo stesso spazio */
@@ -141,10 +141,6 @@ body {
     border-radius: 5px;
 }
 
-html {
-    overflow-x: hidden
-}
-
 h1 {
     font-size: 36px
 }
@@ -250,7 +246,7 @@ h6 {
 
 /* Testo */
 .professionale-text {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     justify-content: center;
     text-align: left;
@@ -271,34 +267,34 @@ h6 {
 }
 
 .professionale {
+    padding: 1%;
     display: flex;
     flex-direction: row; /* Assicura che immagine e testo siano affiancati */
     align-items: center;
     justify-content:space-around; /* Spazio tra l'immagine e il testo */
     background: linear-gradient(90deg, #ffe8a3, #ffb27b);
-    padding: 17px;
+    margin:1.5%;
+    /*padding: 17px;*/
     border-radius: 15px;    
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più morbida */
-    width: 90%;
-    margin: 30px;
+    /*box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più morbida */
+    width: 96%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden; /* Impedisce che gli effetti di ombra escano dal bordo arrotondato */
+/* Impedisce che gli effetti di ombra escano dal bordo arrotondato */
 }
 
 .professionale:hover {
-    transform: scale(1.05); /* Leggera espansione al passaggio del mouse */
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Ombra più marcata */
-}
+    transform: scale(1.05);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); 
+} 
 
 /* Immagine */
 .professionale img {
     width:37%; /* Immagine più grande */
     height: 100%;
     border-radius: 15px; /* Angoli arrotondati */
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Ombra più morbida */
-    object-fit: cover; /* Assicura che l'immagine non distorca */
+    /*box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);  Ombra più morbida */
+    object-fit: cover;  /*Assicura che l'immagine non distorca */
 }
-
 
 .contact-section {
     text-align: center;
@@ -389,10 +385,6 @@ a {
     color: white; /* Colore del testo bianco per contrastare con lo sfondo scuro */
     z-index: 1; /* Assicura che il testo sia sopra l'immagine */
     padding: 20px;
-}
-.sfondo{
-    width: 100%;
-    height: 100%;
 }
 .testolocale {
     font-size: clamp(2rem, 5vw, 4rem); /* Dimensione dinamica del font per il titolo */
@@ -509,124 +501,4 @@ a {
     width: 100%;
     height: auto;
     /*border-radius: 10px;*/
-}
-
-
-/* Meta tag per viewport */
-@media (max-width: 768px) {
-    /* Contenitore orari */
-    .orari-container {
-        padding: 5%;
-        height: auto;
-        flex: 1;
-        margin-bottom: 20px;
-    }
-
-    /* Contenitore mappa */
-    .container-mappa {
-        flex: 1;
-        margin-bottom: 20px;
-    }
-
-    /* Titolo orari */
-    .orari-container h2 {
-        font-size: clamp(1.2rem, 3vw, 1.5rem);
-    }
-
-    /* Stile orari */
-    .orari-item, .orari-item2 {
-        font-size: clamp(1rem, 3vw, 1.2rem);
-    }
-
-    /* Contenitore row */
-    .row {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    /* Immagini nella sezione professionale */
-    .professionale img {
-        width: 50%; /* Rende l'immagine più piccola su dispositivi mobili */
-    }
-
-    .professionale {
-        flex-direction: column; /* Immagine sopra il testo */
-        padding: 10px;
-    }
-
-    /* Modifica delle immagini nella galleria */
-    .gallery-container {
-        grid-template-columns: 1fr; /* Colonna singola su mobile */
-    }
-
-    /* Modifica dei titoli */
-    .testolocale {
-        font-size: clamp(2rem, 5vw, 3rem);
-    }
-
-    .sottotestolocale {
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
-    }
-
-    /* Navbar */
-    .nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* Aggiunta padding per footer */
-    .footer {
-        padding: 20px;
-    }
-
-    /* Logo immagine */
-    .logo-image {
-        width: 60%; /* Riduci la dimensione del logo sui dispositivi mobili */
-    }
-
-    /* Sezione di contatto */
-    .contact-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    /* Footer buttons */
-    .footerbutton {
-        padding: 10px;
-        font-size: 1rem;
-    }
-}
-
-/* Aggiungi supporto per schermi più piccoli (es. smartphone) */
-@media (max-width: 480px) {
-    .orari-container {
-        padding: 8%;
-    }
-
-    .footer {
-        padding: 10px;
-    }
-
-    .logo-image {
-        width: 80%;
-    }
-
-    /* Contenitore della galleria */
-    .gallery-container {
-        grid-template-columns: 1fr; /* Una sola colonna */
-    }
-
-    .professionale img {
-        width: 70%;
-    }
-
-    /* Modifica i testi per smartphone */
-    .professionale-text h2 {
-        font-size: clamp(1.2rem, 6vw, 2.5rem);
-    }
-
-    .professionale-text p {
-        font-size: clamp(1rem, 5vw, 1.2rem);
-    }
 }
