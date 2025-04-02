@@ -512,115 +512,121 @@ a {
 }
 
 
-
-/* Responsive: su mobile diventa 1 colonna */
+/* Meta tag per viewport */
 @media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: 1fr; /* 1 colonna */
+    /* Contenitore orari */
+    .orari-container {
+        padding: 5%;
+        height: auto;
+        flex: 1;
+        margin-bottom: 20px;
     }
-}
 
-
-
-
-/* Stili generali per mobile */
-@media screen and (max-width: 768px) {
-    .orari-container,
+    /* Contenitore mappa */
     .container-mappa {
-        width: 100%; /* Adatta gli elementi a tutta la larghezza */
-        padding: 15px;
+        flex: 1;
+        margin-bottom: 20px;
     }
 
+    /* Titolo orari */
+    .orari-container h2 {
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
+
+    /* Stile orari */
+    .orari-item, .orari-item2 {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+    }
+
+    /* Contenitore row */
     .row {
         flex-direction: column;
-        gap: 5px;
-        padding-top: 5%;
+        gap: 20px;
+        padding: 10px;
     }
 
-    .orari-item, .orari-item2 {
-        font-size: clamp(0.8rem, 3vw, 1.2rem);
-        flex-direction: column;
-        text-align: center;
+    /* Immagini nella sezione professionale */
+    .professionale img {
+        width: 50%; /* Rende l'immagine più piccola su dispositivi mobili */
     }
 
-    .giorno {
-        width: auto;
-        text-align: center;
+    .professionale {
+        flex-direction: column; /* Immagine sopra il testo */
+        padding: 10px;
     }
 
-    .orario-giorno {
-        text-align: center;
+    /* Modifica delle immagini nella galleria */
+    .gallery-container {
+        grid-template-columns: 1fr; /* Colonna singola su mobile */
     }
 
-    /* Ottimizzazione del footer */
-    .footer {
-        padding: 15px;
-        font-size: 0.9rem;
+    /* Modifica dei titoli */
+    .testolocale {
+        font-size: clamp(2rem, 5vw, 3rem);
     }
 
-    /* Menu di navigazione */
-    .top-bar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .sottotestolocale {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
     }
 
+    /* Navbar */
     .nav ul {
         flex-direction: column;
         gap: 10px;
     }
 
-    /* Sezione professionale */
-    .professionale {
-        flex-direction: column;
-        text-align: center;
+    /* Aggiunta padding per footer */
+    .footer {
         padding: 20px;
     }
 
-    .professionale-text {
-        max-width: 100%;
+    /* Logo immagine */
+    .logo-image {
+        width: 60%; /* Riduci la dimensione del logo sui dispositivi mobili */
     }
 
-    .professionale img {
-        width: 80%;
-    }
-
-    /* Sezione prezzi */
-    .pricing-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pricing-category {
-        width: 90%;
-    }
-
-    /* Sezione contatti */
+    /* Sezione di contatto */
     .contact-container {
         flex-direction: column;
-        text-align: center;
         gap: 20px;
     }
 
-    .contact-info {
-        font-size: 18px;
-        text-align: center;
+    /* Footer buttons */
+    .footerbutton {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* Aggiungi supporto per schermi più piccoli (es. smartphone) */
+@media (max-width: 480px) {
+    .orari-container {
+        padding: 8%;
     }
 
-    /* Sezione immagine locale */
-    .fotolocale {
-        height: 30vh;
-    }
-
-    .scrittelocale {
+    .footer {
         padding: 10px;
     }
 
-    .testolocale {
-        font-size: clamp(1.5rem, 4vw, 3rem);
+    .logo-image {
+        width: 80%;
     }
 
-    .sottotestolocale {
-        font-size: clamp(1.2rem, 3vw, 2.5rem);
+    /* Contenitore della galleria */
+    .gallery-container {
+        grid-template-columns: 1fr; /* Una sola colonna */
+    }
+
+    .professionale img {
+        width: 70%;
+    }
+
+    /* Modifica i testi per smartphone */
+    .professionale-text h2 {
+        font-size: clamp(1.2rem, 6vw, 2.5rem);
+    }
+
+    .professionale-text p {
+        font-size: clamp(1rem, 5vw, 1.2rem);
     }
 }
