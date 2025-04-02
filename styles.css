@@ -181,7 +181,8 @@ h6 {
     background: linear-gradient(to right, #ffd167, #c25810);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     font-size: 1rem;
     position: relative;
     width: 100%;
