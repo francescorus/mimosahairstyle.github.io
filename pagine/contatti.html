@@ -1,74 +1,90 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="it">
 <head>
-  <title>MimosaHairStyleWebsite</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../stili/contatti.css">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
+    <title>MimosaHairStyle - Contatti</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../stili/contatti.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
 <body>
-  <!-- Navigation bar with social media icons -->
-  <div class="top-bar">
-    <!-- Navigazione -->
-    <nav class="nav">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pagine/servizi.html">Servizi</a></li>
-        <li><a href="../pagine/team.html">Il Nostro Team</a></li>
-        <li><a href="../pagine/contatti.html">Contatti</a></li>
-      </ul>
-    </nav>
 
-    <!-- Social -->
-    <div class="social">
-      <a href="#"><i class="fa fa-facebook-official"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
-  <center>
-    <div class="sfondo">
+    <!-- Barra di navigazione -->
+    <div class="top-bar">
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pagine/servizi.html">Servizi</a></li>
+                <li><a href="../pagine/team.html">Il Nostro Team</a></li>
+                <li><a href="../pagine/contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
 
-
-      <header class="logo-mimosa2">
-        <div>
-          <img class="w3-image" src="../foto/mimosalogouff.png">
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
         </div>
+    </div>
 
-        <section class="contact-section">
-          <div class="contact-container">
+    <!-- Logo e informazioni -->
+    <header class="logo-mimosa2">
+        <img class="logo-img" src="../foto/mimosalogouff.png" alt="Mimosa Logo">
+    </header>
 
-            <!-- Informazioni di contatto -->
-            <div class="contact-info">
-              <p><strong>Indirizzo 📍:</strong> Via Esempio, 123 - Città</p>
-              <p><strong>Telefono 📱:</strong> +39 123 456 7890</p>
-              <p><strong>Email 📧:</strong> info@iltuodominio.it</p>
+    <!-- Sezione Contatti -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Contattaci 📞</h2>
+            <p><strong>Indirizzo 📍:</strong> Via Esempio, 123 - Città</p>
+            <p><strong>Telefono 📱:</strong> +39 123 456 7890</p>
+            <p><strong>Email 📧:</strong> info@iltuodominio.it</p>
+
+            <!-- Mappa Google 
+            <div class="map-container">
+                <h3>Dove ci troviamo 📍</h3>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d... (INSERISCI IL TUO LINK)"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>-->
+
+            <!-- Modulo di contatto -->
+            <div class="contact-form">
+                <h3>Scrivici un messaggio ✍️</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Il tuo nome" required>
+                    <input type="email" name="email" placeholder="La tua email" required>
+                    <textarea name="message" placeholder="Il tuo messaggio" required></textarea>
+                    <button type="submit">Invia Messaggio</button>
+                </form>
             </div>
-          </div>
-        </section>
-      </header>
-    </div>
-    <div>
-      <!--<img class="mimosaimage" src="../foto/mimosa2.png" width="1600" height="1060">
-    </div>-->
-      <div style="padding: 5%"></div>
-    </div>
-  </center>
-  <!-- Footer -->
-  <footer class="footer" style="padding:32px">
-    <a href="#" class="footerbutton"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <p>Powered by <a href="Francesco Russo" target="_blank">Francesco Russo</a></p>
-  </footer>
+
+            <!-- FAQ -->
+            <div class="faq">
+                <h3>Domande Frequenti ❓</h3>
+                <details>
+                    <summary>💇 Offrite tagli per uomo e donna?</summary>
+                    <p>Sì! Offriamo servizi di taglio e styling sia per uomini che per donne.</p>
+                </details>
+                <details>
+                    <summary>🎨 È necessaria la prenotazione per la colorazione?</summary>
+                    <p>Sì, consigliamo di prenotare in anticipo per i trattamenti di colorazione.</p>
+                </details>
+                <details>
+                    <summary>💳 Accettate pagamenti con carta?</summary>
+                    <p>Sì, accettiamo carte di credito, debito e contanti.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="footerbutton"><i class="fa fa-arrow-up"></i> Torna su</a>
+        <p>Powered by <a href="Francesco Russo" target="_blank">Francesco Russo</a></p>
+    </footer>
 
 </body>
-
 </html>

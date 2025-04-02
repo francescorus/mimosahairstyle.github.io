@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: linear-gradient(to right, #dfbf2f, #c25810);
+    background: linear-gradient(to right, #ffd167, #c25810);
 }
 
 .nav ul {
@@ -62,7 +62,18 @@ body {
 /* Sezione Membri Principali */
 .team-leaders {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
+}
+
+.footerbutton {
+    display: inline-block;
+    background: white ;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .leader-container {
@@ -170,7 +181,7 @@ body {
 /* Footer */
 .footer {
     text-align: center;
-    background: linear-gradient(to right, #dfbf2f, #c25810);
+    background: linear-gradient(to right, #ffd167, #c25810);
     color: white;
     padding: 20px;
 }

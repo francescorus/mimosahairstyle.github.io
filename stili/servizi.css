@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: linear-gradient(to right, #dfbf2f, #c25810);
+    background: linear-gradient(to right, #ffd167, #c25810);
 }
 
 .nav ul {
@@ -95,7 +95,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(to right, #dfbf2f, #c25810);
+    background: linear-gradient(to right, #ffd167, #c25810);
     color: white;
     text-align: center;
     padding: 20px;

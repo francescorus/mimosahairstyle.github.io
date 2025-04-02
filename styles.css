@@ -1,51 +1,66 @@
 html {
     box-sizing: border-box;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
 }
 
+/* Contenitore orari */
+.orari-container {
+    flex: 1;  /* Permette alla mappa e agli orari di occupare lo stesso spazio */
+    background: #FAF3E3; /* Sfondo delicato */
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 
+/* Titolo orari */
+.orari-container h2 {
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    color: #7A4D23;
+    text-align: center;
+}
+
+/* Stile orari */
+.orari-item, .orari-item2 {
+    justify-content: space-between;
+    padding: 1%;
+    border-bottom: 1px solid #D1B07F;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.orari-item2 {
+    font-weight: bold;
+    color: #A52A2A; /* Rosso elegante per la chiusura */
+}
+
+/* Contenitore mappa */
+.container-mappa {
+    flex: 1;
+    background: #ffffff;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 .mappa {
     width: 100%;
     height: 100%;
-    /* Mantiene la mappa ben visibile */
     border-radius: 10px;
 }
 
-.orari-container,
-.container-mappa {
-    width: 48%;
-    /* Mantiene gli elementi affiancati */
-    display: flex;
-    flex-direction: column;
-    /* Permette al contenuto di adattarsi all'altezza */
-    justify-content: center;
-    /* Centra il contenuto verticalmente */
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.orari-container h2 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    /* Il titolo si adatta tra 1.5rem e 2.5rem */
-}
-
-.orari-container {
-   text-align: center;
-}
-
+/* Contenitore row */
 .row {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: space-between;
+    align-items: stretch;  /* Assicura che gli elementi abbiano la stessa altezza */
     flex-wrap: wrap;
     gap: 10px;
-    padding-top: 1%;
-    /* Spazio tra i due elementi */
+    padding: 2%;
+    height: 100%;
 }
+
 
 h2 {
     color: #333;
@@ -260,13 +275,12 @@ h6 {
     flex-direction: row; /* Assicura che immagine e testo siano affiancati */
     align-items: center;
     justify-content:space-around; /* Spazio tra l'immagine e il testo */
-    gap: 20px;
     background: linear-gradient(90deg, #ffe8a3, #ffb27b);
-    padding: 30px;
-    border-radius: 15px;
+    padding: 17px;
+    border-radius: 15px;    
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più morbida */
-    width: 97%;
-    margin: 30px auto;
+    width: 90%;
+    margin: 30px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     overflow: hidden; /* Impedisce che gli effetti di ombra escano dal bordo arrotondato */
 }
@@ -392,14 +406,12 @@ a {
     font-weight: lighter;
 }
 
-
-
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: linear-gradient(to right, #dfbf2f, #c25810);
+    background: linear-gradient(to right, #ffd167, #c25810);
 }
 
 .nav ul {
@@ -478,8 +490,35 @@ a {
     /* Regola la dimensione del logo in base alle necessità */
 }
 
+/* Contenitore della galleria */
+.gallery {
+    padding: 2%;
+}
+
+/* Struttura della griglia */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Stile delle immagini */
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    /*border-radius: 10px;*/
+}
 
 
+
+/* Responsive: su mobile diventa 1 colonna */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 colonna */
+    }
+}
 
 
 
