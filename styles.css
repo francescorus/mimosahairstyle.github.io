@@ -4,11 +4,7 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit
-}
+
 
 .mappa {
     width: 100%;
@@ -457,16 +453,6 @@ a {
 
     position: static;
     align-items: center;
-}
-
-#main {
-    transition: margin-left .4s
-}
-
-
-
-body {
-    font-family: "Open Sans"
 }
 
 .header-container {
