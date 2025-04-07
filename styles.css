@@ -1,11 +1,13 @@
-
-.sfondo{
+.sfondo {
     width: 100%;
 }
+
 /* Contenitore orari */
 .orari-container {
-    flex: 1;  /* Permette alla mappa e agli orari di occupare lo stesso spazio */
-    background: #FAF3E3; /* Sfondo delicato */
+    flex: 1;
+    /* Permette alla mappa e agli orari di occupare lo stesso spazio */
+    background: #fbf2dc;
+    /* Sfondo delicato */
     padding: 1%;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,16 +25,19 @@
 }
 
 /* Stile orari */
-.orari-item, .orari-item2 {
+.orari-item,
+.orari-item2 {
+    border-bottom: 1px solid #A1887F;
     justify-content: space-between;
     padding: 1%;
-    border-bottom: 1px solid #D1B07F;
+    /*border-bottom: 1px solid #D1B07F;     VECCHIO*/
     font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 .orari-item2 {
     font-weight: bold;
-    color: #A52A2A; /* Rosso elegante per la chiusura */
+    /*color: #A52A2A;  VECCHIO */
+    color: #4E342E;
 }
 
 /* Contenitore mappa */
@@ -54,7 +59,8 @@
 .row {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;  /* Assicura che gli elementi abbiano la stessa altezza */
+    align-items: stretch;
+    /* Assicura che gli elementi abbiano la stessa altezza */
     flex-wrap: wrap;
     gap: 10px;
     padding: 2%;
@@ -70,24 +76,29 @@ h2 {
 .orari-item,
 .orari-item2 {
     display: flex;
-    align-items: center; /* Mantiene gli elementi allineati verticalmente */
+    align-items: center;
+    /* Mantiene gli elementi allineati verticalmente */
     border-bottom: 1px solid #ddd;
     padding: 0.5%;
     font-size: clamp(0.7rem, 2vw, 1.5rem);
-    justify-content: space-between; /* Spazio massimo tra giorno e orario */
+    justify-content: space-between;
+    /* Spazio massimo tra giorno e orario */
 }
 
 /* Stile per i giorni */
 .giorno {
     font-weight: bold;
-    color: #cba116;
-    width: 120px; /* Fissa la larghezza per mantenere l'allineamento */
+    /*color: #cba116;       VECCHIO*/
+    color: #D4AF37;
+    width: 120px;
+    /* Fissa la larghezza per mantenere l'allineamento */
     text-align: left;
 }
 
 /* Stile per gli orari */
 .orario-giorno {
-    flex-grow: 1; /* Permette agli orari di occupare lo spazio rimanente */
+    flex-grow: 1;
+    /* Permette agli orari di occupare lo spazio rimanente */
     text-align: right;
 }
 
@@ -127,12 +138,14 @@ hr {
 /* End extract */
 html,
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #2a2a2a;
+    /*color: #2a2a2a;       VECCHIO*/
+    color: #4E342E;
     font-size: 15px;
     line-height: 1.5;
-    background-color: #f8f7f5 !important
+    /*background-color: #f8f7f5 !important      VECCHIO*/
+    background-color: #fffaf3dc !important;
 }
 
 .separator {
@@ -143,7 +156,7 @@ body {
 }
 
 h1 {
-    
+
     font-size: 36px
 }
 
@@ -168,7 +181,8 @@ h6 {
 }
 
 .footer {
-    background: linear-gradient(to right, #a9a7a7, #645951);
+    background: linear-gradient(to right, #4E342E, #7d675f);
+    /* Marrone a caramello */
     color: white;
     text-align: center;
     padding-top: 2%;
@@ -180,19 +194,21 @@ h6 {
 
 
 .footer a {
-    color: #c58332; /* Colore dorato per i link */
+    color: #c58332;
+    /* Colore dorato per i link */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .footer a:hover {
-    color: #ffffff; /* Cambia in bianco al passaggio del mouse */
+    color: #ffffff;
+    /* Cambia in bianco al passaggio del mouse */
 }
 
 .footerbutton {
     display: inline-block;
-    background: white ;
+    background: white;
     color: black;
     padding: 10px 20px;
     border-radius: 25px;
@@ -225,7 +241,8 @@ h6 {
 
 .text h2 {
     font-size: 24px;
-    color: #f4a261;
+    /*color: #f4a261;       VECCHIO*/
+    color: #C9B037;
     margin: 0 0 10px;
 }
 
@@ -241,56 +258,91 @@ h6 {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    color: #333; /* Colore del testo più scuro per contrasto */
-    max-width: 60%; /* Limita la larghezza del testo per non farlo occupare troppo spazio */
+    /*color: #333;          VECCHIO*/
+    max-width: 60%;
+    /* Limita la larghezza del testo per non farlo occupare troppo spazio */
+}
+
+.servizi h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    /* Dimensione dinamica del titolo */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #7b6661;
+
+}
+
+
+.chi-siamo {
+    max-width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chi-siamo-titolo {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .professionale-text h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Dimensione dinamica del titolo */
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    /* Dimensione dinamica del titolo */
     margin-bottom: 10px;
     font-weight: bold;
+    color: #f1e2c9;
 }
 
 .professionale-text p {
-    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Testo dinamico per il paragrafo */
-    color: #555; /* Colore del testo del paragrafo più chiaro */
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    /* Testo dinamico per il paragrafo */
+    /*color: #555;           */
+    color: #f1e2c9;
     line-height: 1.6;
 }
 
 .professionale {
     padding: 1%;
     display: flex;
-    flex-direction: row; /* Assicura che immagine e testo siano affiancati */
+    flex-direction: row;
+    /* Assicura che immagine e testo siano affiancati */
     align-items: center;
-    justify-content:space-around; /* Spazio tra l'immagine e il testo */
-    background: linear-gradient(to right, #b4b4b4, #ddd1c9);
-    margin:1.5%;
+    justify-content: space-around;
+    /* Spazio tra l'immagine e il testo */
+    background: linear-gradient(to right, #7b6661, #A1887F);
+    margin: 1.5%;
     /*padding: 17px;*/
-    border-radius: 15px;    
+    border-radius: 15px;
     /*box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più morbida */
     width: 96%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-/* Impedisce che gli effetti di ombra escano dal bordo arrotondato */
+    /* Impedisce che gli effetti di ombra escano dal bordo arrotondato */
 }
 
 .professionale:hover {
     transform: scale(1.05);
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); 
-} 
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
 
 /* Immagine */
 .professionale img {
-    width:37%; /* Immagine più grande */
+    width: 37%;
+    /* Immagine più grande */
     height: 100%;
-    border-radius: 15px; /* Angoli arrotondati */
+    border-radius: 15px;
+    /* Angoli arrotondati */
     /*box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);  Ombra più morbida */
-    object-fit: cover;  /*Assicura che l'immagine non distorca */
+    object-fit: cover;
+    /*Assicura che l'immagine non distorca */
 }
 
 .contact-section {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to right, #8B4513, #A52A2A);
+    background: linear-gradient(to right, #4E342E, #A1887F);
+    /* Marrone cioccolato a caramello */
     /* Sfumatura da Marrone a Rosso */
     color: white;
 }
@@ -314,6 +366,7 @@ h6 {
     text-align: left;
     font-size: 22px;
     line-height: 1.8;
+    color: #C9B037;
 }
 
 .contact-info p {
@@ -356,36 +409,46 @@ a {
     padding-bottom: 1%;
     position: relative;
     width: 100%;
-    height: 40vh; /* Impostato a 100vh per coprire tutta l'altezza della finestra */
+    height: 40vh;
+    /* Impostato a 100vh per coprire tutta l'altezza della finestra */
     overflow: hidden;
 }
 
 .fotolocale img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Assicura che l'immagine si adatti mantenendo il suo rapporto di aspetto */
-    filter: brightness(60%); /* Abbassa la luminosità dell'immagine per migliorare il contrasto del testo */
+    object-fit: cover;
+    /* Assicura che l'immagine si adatti mantenendo il suo rapporto di aspetto */
+    filter: brightness(60%);
+    /* Abbassa la luminosità dell'immagine per migliorare il contrasto del testo */
 }
 
 .scrittelocale {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra il testo sia orizzontalmente che verticalmente */
+    transform: translate(-50%, -50%);
+    /* Centra il testo sia orizzontalmente che verticalmente */
     text-align: center;
-    color: white; /* Colore del testo bianco per contrastare con lo sfondo scuro */
-    z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+    color: white;
+    /* Colore del testo bianco per contrastare con lo sfondo scuro */
+    z-index: 1;
+    /* Assicura che il testo sia sopra l'immagine */
     padding: 20px;
 }
+
 .testolocale {
-    font-size: clamp(2rem, 5vw, 4rem); /* Dimensione dinamica del font per il titolo */
+    font-size: clamp(2rem, 5vw, 4rem);
+    /* Dimensione dinamica del font per il titolo */
     font-weight: bold;
-    letter-spacing: 2px; /* Spaziatura tra le lettere */
+    letter-spacing: 2px;
+    /* Spaziatura tra le lettere */
     margin-bottom: 10px;
 }
 
 .sottotestolocale {
-    font-size: clamp(1.5rem, 3.5vw, 3rem); /* Dimensione dinamica per il secondo titolo */
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    /* Dimensione dinamica per il secondo titolo */
     font-weight: lighter;
 }
 
@@ -394,7 +457,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: linear-gradient(to right, #a9a7a7, #645951);
+    background: linear-gradient(to right, #4E342E, #7d675f);
 }
 
 .nav ul {
@@ -433,10 +496,69 @@ a {
     color: #d4af37;
 }
 
+.benvenuto {
+    text-align: center;
+    width: 90%;
+    margin-top: 2%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-left: 5px solid #d4af37;
+    /* color oro elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
 
+.benvenuto h2 {
+    font-size: 24px;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
 
+.benvenuto p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
 
+.cta-whatsapp {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e7f5ea;
+    border-left: 5px solid #25d366;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;   
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
 
+.cta-whatsapp p {
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    margin-bottom: 20px;
+    color: #1c1c1c;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1ebe5d;
+}
+
+.cta-button i {
+    margin-right: 10px;
+    font-size: 18px;
+}
 
 .logo-mimosa {
 
@@ -481,7 +603,8 @@ a {
 /* Struttura della griglia */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colonne */
     gap: 10px;
     width: 100%;
     margin: auto;
