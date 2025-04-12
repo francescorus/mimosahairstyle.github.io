@@ -7,12 +7,12 @@ body {
     font-size: 15px;
     line-height: 1.5;
     /*background-color: #f8f7f5 !important      VECCHIO*/
-    background-color: #fffaf3dc !important;
+    background-color: #fffefbdc !important;
 }
 
 .chi-siamo {
     max-width: 900px;
-    margin: 80px auto;
+    margin: 20px auto;
     padding: 0 20px;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -105,7 +105,6 @@ body {
 /* Sezione Membri Principali */
 .team-leaders {
     text-align: center;
-    padding: 20px 20px;
 }
 
 .footerbutton {
@@ -132,7 +131,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 220px;
+    width: 38%;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -213,7 +212,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    filter: brightness(45%);
+    filter: brightness(100%);
 }
 
 

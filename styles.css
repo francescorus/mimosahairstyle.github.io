@@ -40,6 +40,7 @@
     color: #4E342E;
 }
 
+
 /* Contenitore mappa */
 .container-mappa {
     flex: 1;
@@ -387,7 +388,7 @@ hr {
 }
 
 .image-2 {
-    filter: brightness(40%);
+    filter: brightness(100%);
     max-width: 100%;
     height: auto
 }
@@ -419,7 +420,7 @@ a {
     height: 100%;
     object-fit: cover;
     /* Assicura che l'immagine si adatti mantenendo il suo rapporto di aspetto */
-    filter: brightness(60%);
+    filter: brightness(100%);
     /* Abbassa la luminosità dell'immagine per migliorare il contrasto del testo */
 }
 
@@ -615,4 +616,20 @@ a {
     width: 100%;
     height: auto;
     /*border-radius: 10px;*/
+}
+
+a {
+    text-decoration: none;  /* Rimuove la sottolineatura da tutti i link */
+}
+
+a:visited {
+    text-decoration: none;  /* Rimuove la sottolineatura anche dai link visitati */
+}
+
+a:active {
+    text-decoration: none;  /* Rimuove la sottolineatura quando il link è attivo */
+}
+
+a:hover {
+    text-decoration: none;  /* Rimuove la sottolineatura quando il link è hoverato */
 }

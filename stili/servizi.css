@@ -3,12 +3,10 @@ html,
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    /*color: #2a2a2a;       VECCHIO*/
     color: #4E342E;
     font-size: 15px;
     line-height: 1.5;
-    /*background-color: #f8f7f5 !important      VECCHIO*/
-    background-color: #fffaf3dc !important;
+    background-color: #fffefbdc !important;
 }
 
 .top-bar {
@@ -18,7 +16,6 @@ body {
     padding: 10px 5%;
     background: linear-gradient(to right, #4E342E, #7d675f);
 }
-
 
 .nav ul {
     list-style: none;
@@ -97,9 +94,9 @@ body {
     height: auto;
     display: block;
 }
+
 .footer {
     background: linear-gradient(to right, #4E342E, #7d675f);
-    /* Marrone a caramello */
     color: white;
     text-align: center;
     padding-top: 2%;
@@ -109,10 +106,8 @@ body {
     width: 100%;
 }
 
-
 .footer a {
     color: #c58332;
-    /* Colore dorato per i link */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
@@ -120,7 +115,6 @@ body {
 
 .footer a:hover {
     color: #ffffff;
-    /* Cambia in bianco al passaggio del mouse */
 }
 
 .footerbutton {
@@ -135,7 +129,7 @@ body {
 }
 
 .footerbutton:hover {
-    background: #ffaa00;
+    background: #a38b48;
     transform: scale(1.1);
 }
 
@@ -145,12 +139,10 @@ body {
     opacity: 0.8;
 }
 
-
 .categoria {
     margin-bottom: 20px;
 }
 
-/* Titoli delle categorie */
 .categoria h2 {
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
@@ -158,7 +150,6 @@ body {
     font-size: 1.5em;
 }
 
-/* Lista prezzi */
 .categoria ul {
     list-style: none;
     padding: 0;
@@ -170,7 +161,6 @@ body {
     transition: 0.3s;
 }
 
-/* Effetto hover sulle voci del listino */
 .categoria ul li:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
@@ -179,7 +169,7 @@ body {
 
 .pricing-section {
     text-align: center;
-    padding:1%;
+    padding: 1%;
 }
 
 .header-container {
@@ -195,14 +185,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    /* Regola la dimensione del logo in base alle necessità */
+    filter: opacity(0%);
 }
 
 .background-image {
     width: 100%;
     height: auto;
     display: block;
-    filter: brightness(80%);
+    filter: brightness(90%);
 }
 
 .pricing-title {
@@ -212,7 +202,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Contenitore dei servizi */
 .pricing-container {
     display: flex;
     text-align: center;
@@ -222,14 +211,13 @@ body {
     max-width: 97%;
     margin: 0 auto;
 }
-/* Categorie dei servizi */
+
 .pricing-category {
     background: linear-gradient(to right, #ebe9e4, #ebe6e3);
     padding: 20px;
     border-radius: 10px;
     width: 90%;
     min-width: 300px;
-    
 }
 
 .category-title {
@@ -238,7 +226,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Lista servizi */
 .service-list {
     list-style: none;
     padding: 0;
@@ -258,14 +245,192 @@ body {
 .service-description {
     background: white;
     padding: 12px 18px;
-    border-radius: 12px; /* Angoli smussati */
+    border-radius: 12px;
     font-size: 1rem;
     color: #555;
 }
 
-/* Nota sui prezzi */
 .pricing-note {
     font-size: 16px;
     color: #6b4525;
     margin-top: 30px;
+}
+
+.prodotti {
+    padding: 10px 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titolo-sezione {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #a38b48;
+}
+
+.categoria h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b89f79;
+}
+
+.griglia-prodotti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-prodotto {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-prodotto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-prodotto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-prodotto h3 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #616161;
+}
+
+.card-prodotto p {
+    font-size: 0.95rem;
+    margin: 0 15px 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Nuovi stili per la sezione dei trattamenti */
+section {
+    max-width: 1100px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section h2,
+section h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #a38b48;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.6rem;
+    color: #c7b47f;
+    margin-top: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight p {
+    font-weight: bold;
+}
+
+.highlight ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.highlight li {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.highlight li:before {
+    content: '•';
+    color: #a38b48;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+.treatment-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.treatment {
+    background-color: #eaf2f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.treatment:hover {
+    transform: translateY(-10px);
+}
+
+.treatment h3 {
+    color: #2980b9;
+}
+
+.treatment p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .treatment-box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .treatment-box {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight {
+        padding: 15px;
+    }
 }
